@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+$green: #1BC800;
+.green {
+    color: $green;
+}
+%hire-me {
+    background: #1BC800;
+    padding: 13px 22px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+    text-align: center;
+}
+
+html {
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #000000;
+    overflow-x: hidden;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+ul {
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.the-cont {
+    max-width: 86rem;
+    margin: 0px auto;
+    padding: 0px 3em 0 3em;
+}
+#loader {
+    background: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+header {
+    nav {
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        padding: 2rem 0;
+        position: fixed;
+        transition: all 0.5s ease;
+    }
+
+    .hire-me-btn {
+        @extend %hire-me;
+        float: right;
+    }
+}
+
+.fixed{
+    background: #000000;
+}
+
+.divider {
+    text-align: center;
+}
+
+#banner {
+    height: 100%;
+    padding: 18vh 0;
+    .hero {
+        h1 {
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+        .img-banner {
+            position: relative;
+            img {
+                height: 100%;
+            }
+            .cool-overlay {
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .box {
+            position: relative;
+            margin-top: 15vh;
+            a {
+                background: $green;
+                padding: 10px 22px;
+                font-size: 22px;
+            }
+            .tri {
+                position: absolute;
+                bottom: -25px;
+                left: 62px;
+                right: 0;
+            }
+        }
+    }
+
+    .hero-img {
+        position: absolute;
+        right: 0;
+        img {
+            height: 100%;
+        }
+    }
+
+    .arrow-down {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        text-align: center;
+        img {
+            height: 70px;
+        }
+    }
+
+
+    .button1 {
+        background: $green;
+        border: 1px solid $green;
+        border-radius: 10px;
+        padding: 15px;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .button2 {
+        padding: 15px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: 0.2s ease-in all;
+
+        &:hover {
+            background: $green;
+        }
+    }
+}
+
+#experience {
+    height: 100%;
+    padding: 10vh 0 0;
+
+    h2 {
+        font-weight: 600;
+    }
+
+    .skills {
+        max-width: 100%;
+        // margin: 20px auto 0;
+        .bar {
+            color: #fff;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-size: 16px;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 15px;
+            width: 100%;
+            p {
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+            span {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                height: 8px;
+                background: #707070;
+                border-radius: 15px;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 1px;
+                    left: 1px;
+                    width: 80%;
+                    height: 68%;
+                    background: $green;
+                    border-radius: 15px;
+                    animation: bar 4s ease;
+                }
+            }
+
+            &:nth-child(1) span:before {
+                width: 85%;
+            }
+            &:nth-child(2) span:before {
+                width: 75%;
+            }
+            &:nth-child(3) span:before {
+                width: 100%;
+            }
+            &:nth-child(4) span:before {
+                width: 85%;
+            }
+            &:nth-child(5) span:before {
+                width: 75%;
+            }
+            &:nth-child(6) span:before {
+                width: 75%;
+            }
+        }
+    }
+    .hire-me-btn {
+        @extend %hire-me;
+        display: block;
+        text-align: center;
+        width: 300px;
+        margin: auto;
+    }
+}
+
+#services {
+    height: 100%;
+    padding: 15vh 0;
+
+    h2 {
+        font-weight: 600;
+    }
+}
+
+#my-works {
+    height: 100%;
+    padding: 15vh 0;
+
+    h2 {
+        font-weight: 600;
+    }
+    .content {
+        position: relative;
+        width: 90%;
+        max-width: 400px;
+        margin: auto;
+        overflow: hidden;
+        
+        .content-overlay {
+            background: $green;
+            border-radius: 5px;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-in-out 0s;
+            -moz-transition: all 0.4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s;
+
+            // &:hover {
+            //     opacity: 0.8;
+            // }
+        }
+
+        .content-img {
+            width: 100%;
+        }
+
+        .content-details {
+            position: absolute;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+
+            h3 {
+                font-size: 22px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 300;
+            }
+            .go-to-btn{
+                border: solid 1px #fff;
+                padding: 10px 15px;
+                transition: all 0.3s ease-in-out 0s;
+                &:hover {
+                    background: #fff;
+                    color: #fff;
+                    font-weight: 400;
+                }
+            }
+            .btn-1 {
+                // background: darken($red, 1.5%);
+                font-weight: 100;
+                
+                svg {
+                  height: 45px;
+                  left: 0;
+                  position: absolute;
+                  top: 0; 
+                  width: 100%; 
+                }
+                
+                rect {
+                  fill: none;
+                  stroke: #fff;
+                  stroke-width: 2;
+                  stroke-dasharray: 422, 0;
+                  transition: all 0.35s linear;
+                }
+              }
+              
+              .btn-1:hover {
+                // background: rgba($red, 0);
+                font-weight: 600;
+                color: #fff;
+                // letter-spacing: 1px;
+                
+                rect {
+                  stroke-width: 5;
+                  stroke-dasharray: 15, 310;
+                  stroke-dashoffset: 48;
+                  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+                }
+              }
+        }
+        &:hover {
+            .content-details {
+                top: 50%;
+                left: 50%;
+                opacity: 1;
+            }
+            .content-overlay {
+                opacity: 0.8;
+            }
+        }
+    }
+    .arrow {
+        img {
+            margin-top: -2px;
+        }
+    }
+}
+.fadeIn-bottom{
+    top: 20%;
+}
+@keyframes bar {
+    from {
+        width: 0;
+    }
+}
+
+#contact {
+    height: 100%;
+    padding: 5vh 0;
+    position: relative;
+
+    h2 {
+        font-weight: 600;
+    }
+    .mail {
+        display: grid;
+        grid-template-columns: 70px 100%;
+    }
+    .socmed-links {
+        position: relative;
+        z-index: 1;
+    }
+    .line-green {
+        background: $green;
+        padding: 2em;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        max-width: 50%;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .find-me {
+        padding-top: 100px;
+    }
+
+    #particles-js {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+footer {
+    padding: 1vh;
+    p {
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+}

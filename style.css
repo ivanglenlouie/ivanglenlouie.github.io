@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap");
+.green {
+  color: #1BC800;
+}
+
+#experience .hire-me-btn, header .hire-me-btn {
+  background: #1BC800;
+  padding: 13px 22px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: #000000;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+a:hover, a:focus, a:active, a:active:hover, a:active:focus {
+  text-decoration: none;
+  color: #fff;
+}
+
+.the-cont {
+  max-width: 86rem;
+  margin: 0px auto;
+  padding: 0px 3em 0 3em;
+}
+
+#loader {
+  background: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+
+header nav {
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 2rem 0;
+  position: fixed;
+  transition: all 0.5s ease;
+}
+header .hire-me-btn {
+  float: right;
+}
+
+.fixed {
+  background: #000000;
+}
+
+.divider {
+  text-align: center;
+}
+
+#banner {
+  height: 100%;
+  padding: 18vh 0;
+}
+#banner .hero h1 {
+  font-weight: 600;
+}
+#banner .hero p {
+  font-size: 22px;
+}
+#banner .hero .img-banner {
+  position: relative;
+}
+#banner .hero .img-banner img {
+  height: 100%;
+}
+#banner .hero .img-banner .cool-overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+#banner .hero .box {
+  position: relative;
+  margin-top: 15vh;
+}
+#banner .hero .box a {
+  background: #1BC800;
+  padding: 10px 22px;
+  font-size: 22px;
+}
+#banner .hero .box .tri {
+  position: absolute;
+  bottom: -25px;
+  left: 62px;
+  right: 0;
+}
+#banner .hero-img {
+  position: absolute;
+  right: 0;
+}
+#banner .hero-img img {
+  height: 100%;
+}
+#banner .arrow-down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  text-align: center;
+}
+#banner .arrow-down img {
+  height: 70px;
+}
+#banner .button1 {
+  background: #1BC800;
+  border: 1px solid #1BC800;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+#banner .button2 {
+  padding: 15px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  transition: 0.2s ease-in all;
+}
+#banner .button2:hover {
+  background: #1BC800;
+}
+
+#experience {
+  height: 100%;
+  padding: 10vh 0 0;
+}
+#experience h2 {
+  font-weight: 600;
+}
+#experience .skills {
+  max-width: 100%;
+}
+#experience .skills .bar {
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+#experience .skills .bar p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+#experience .skills .bar span {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 8px;
+  background: #707070;
+  border-radius: 15px;
+}
+#experience .skills .bar span::before {
+  position: absolute;
+  content: "";
+  top: 1px;
+  left: 1px;
+  width: 80%;
+  height: 68%;
+  background: #1BC800;
+  border-radius: 15px;
+  animation: bar 4s ease;
+}
+#experience .skills .bar:nth-child(1) span:before {
+  width: 85%;
+}
+#experience .skills .bar:nth-child(2) span:before {
+  width: 75%;
+}
+#experience .skills .bar:nth-child(3) span:before {
+  width: 100%;
+}
+#experience .skills .bar:nth-child(4) span:before {
+  width: 85%;
+}
+#experience .skills .bar:nth-child(5) span:before {
+  width: 75%;
+}
+#experience .skills .bar:nth-child(6) span:before {
+  width: 75%;
+}
+#experience .hire-me-btn {
+  display: block;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+
+#services {
+  height: 100%;
+  padding: 15vh 0;
+}
+#services h2 {
+  font-weight: 600;
+}
+
+#my-works {
+  height: 100%;
+  padding: 15vh 0;
+}
+#my-works h2 {
+  font-weight: 600;
+}
+#my-works .content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+#my-works .content .content-overlay {
+  background: #1BC800;
+  border-radius: 5px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+#my-works .content .content-img {
+  width: 100%;
+}
+#my-works .content .content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#my-works .content .content-details h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+#my-works .content .content-details p {
+  font-size: 16px;
+  font-weight: 300;
+}
+#my-works .content .content-details .go-to-btn {
+  border: solid 1px #fff;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out 0s;
+}
+#my-works .content .content-details .go-to-btn:hover {
+  background: #fff;
+  color: #fff;
+  font-weight: 400;
+}
+#my-works .content .content-details .btn-1 {
+  font-weight: 100;
+}
+#my-works .content .content-details .btn-1 svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#my-works .content .content-details .btn-1 rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+#my-works .content .content-details .btn-1:hover {
+  font-weight: 600;
+  color: #fff;
+}
+#my-works .content .content-details .btn-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#my-works .content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+#my-works .content:hover .content-overlay {
+  opacity: 0.8;
+}
+#my-works .arrow img {
+  margin-top: -2px;
+}
+
+.fadeIn-bottom {
+  top: 20%;
+}
+
+@keyframes bar {
+  from {
+    width: 0;
+  }
+}
+#contact {
+  height: 100%;
+  padding: 5vh 0;
+  position: relative;
+}
+#contact h2 {
+  font-weight: 600;
+}
+#contact .mail {
+  display: grid;
+  grid-template-columns: 70px 100%;
+}
+#contact .socmed-links {
+  position: relative;
+  z-index: 1;
+}
+#contact .line-green {
+  background: #1BC800;
+  padding: 2em;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  max-width: 50%;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+#contact .find-me {
+  padding-top: 100px;
+}
+#contact #particles-js {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+footer {
+  padding: 1vh;
+}
+footer p {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .btn {
+    margin: 0 1em 2em;
+  }
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #banner {
+    padding: 7vh 0;
+  }
+  #banner .banner-cont {
+    text-align: center;
+  }
+  #banner .hero .box {
+    margin-top: 50px;
+  }
+  #banner .hero .box .tri {
+    margin: auto;
+    left: 0;
+  }
+  #banner .hero .img-banner {
+    margin-top: 20px;
+  }
+  #banner .btn-cont {
+    margin: auto;
+    width: 100%;
+  }
+  #banner .arrow-down {
+    display: none;
+  }
+
+  #experience {
+    padding: 0;
+  }
+  #experience .about-cont {
+    margin-top: 50px;
+  }
+  #experience .about-cont h2, #experience .about-cont p {
+    text-align: center;
+  }
+  #experience .about-cont .skills p {
+    text-align: left;
+  }
+
+  #my-works {
+    padding: 7vh 0;
+  }
+}
+@media (max-width: 768px) {
+  header .hire-me-btn, #experience .hire-me-btn {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #banner .hero .box a {
+    font-size: 18px;
+  }
+  #banner .hero p {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

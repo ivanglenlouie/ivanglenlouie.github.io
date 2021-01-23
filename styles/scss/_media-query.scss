@@ -1,0 +1,95 @@
+@media (min-width:1580px) {}
+
+@media (max-width:1378px) {}
+
+@media (max-width:1378px) {}
+
+@media (max-width:1280px) {}
+
+@media (max-width:1180px) {}
+
+@media (max-width:1200px) {}
+
+@media (max-width:991px) {
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    p {
+        font-size: 16px;
+    }
+    #banner {
+        padding: 7vh 0;
+        .banner-cont {
+            text-align: center;
+        }
+        .hero {
+            .box {
+                margin-top: 50px;
+                .tri {
+                    margin: auto;
+                    left: 0;
+                }
+            }
+            .img-banner {
+                margin-top: 20px;
+            }
+        }
+        .btn-cont {
+            margin: auto;
+            width: 100%;
+        }
+        .arrow-down {
+            display: none;
+        }
+    }
+    #experience {
+        padding: 0;
+        .about-cont {
+            margin-top: 50px;
+            h2, p {
+                text-align: center;
+            }
+            .skills {
+                p {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    #my-works {
+        padding: 7vh 0;
+    }
+}
+
+@media (max-width:768px) {
+    %hire-me {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 14px;
+    }
+    #banner {
+        .hero {
+            .box {
+                a {
+                    font-size: 18px;
+                }
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {}
+
+@media (max-width:480px) {}
+
+@media (max-width: 375px) {}
