@@ -1,7 +1,7 @@
 $(window).on('load', function () {
     $('#loader').delay(1000).fadeOut(800);
 });
-
+window.location.href.split('#')[0]
 particlesJS.load('particles-js', 'js/particles.json', function() {
     // console.log('callback - particles.js config loaded');
 });
@@ -28,4 +28,5 @@ $(document).ready(function () {
             scrollTop: target.offset().top - 100 //offsets for fixed header
         }, 'linear');
     }
+
 });

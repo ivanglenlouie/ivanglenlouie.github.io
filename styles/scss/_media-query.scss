@@ -92,4 +92,8 @@
 
 @media (max-width:480px) {}
 
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+    .the-cont {
+        padding: 0px 1.5em 0 1.5em;
+    }
+}

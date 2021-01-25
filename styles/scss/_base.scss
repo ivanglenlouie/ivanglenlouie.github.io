@@ -421,6 +421,7 @@ header {
     .mail {
         display: grid;
         grid-template-columns: 70px 100%;
+        overflow: hidden;
     }
     .socmed-links {
         position: relative;

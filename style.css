@@ -356,6 +356,7 @@ header .hire-me-btn {
 #contact .mail {
   display: grid;
   grid-template-columns: 70px 100%;
+  overflow: hidden;
 }
 #contact .socmed-links {
   position: relative;
@@ -487,6 +488,11 @@ footer p {
   }
   #banner .hero p {
     font-size: 18px;
+  }
+}
+@media (max-width: 375px) {
+  .the-cont {
+    padding: 0px 1.5em 0 1.5em;
   }
 }
 
