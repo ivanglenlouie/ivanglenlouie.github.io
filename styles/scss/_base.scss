@@ -384,6 +384,10 @@ header {
                 }
               }
         }
+
+        .content-details-mob {
+            display: none;
+        }
         &:hover {
             .content-details {
                 top: 50%;

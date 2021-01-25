@@ -324,6 +324,9 @@ header .hire-me-btn {
   stroke-dashoffset: 48;
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
+#my-works .content .content-details-mob {
+  display: none;
+}
 #my-works .content:hover .content-details {
   top: 50%;
   left: 50%;
@@ -469,6 +472,80 @@ footer p {
   #my-works {
     padding: 7vh 0;
   }
+  #my-works .content {
+    position: relative;
+  }
+  #my-works .content .content-overlay {
+    display: none;
+  }
+  #my-works .content .content-details {
+    display: none;
+  }
+  #my-works .content .content-details-mob {
+    display: block;
+    position: absolute;
+    text-align: center;
+    padding: 20px 1em;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    background: #1BC800;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  #my-works .content .content-details-mob h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  #my-works .content .content-details-mob p {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  #my-works .content .content-details-mob .go-to-btn {
+    border: solid 1px #fff;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  #my-works .content .content-details-mob .go-to-btn:hover {
+    background: #fff;
+    color: #fff;
+    font-weight: 400;
+  }
+  #my-works .content .content-details-mob .btn-1 {
+    font-weight: 100;
+    margin: 0;
+    font-size: 12px;
+  }
+  #my-works .content .content-details-mob .btn-1 svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  #my-works .content .content-details-mob .btn-1 rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+  #my-works .content .content-details-mob .btn-1:hover {
+    font-weight: 600;
+    color: #fff;
+  }
+  #my-works .content .content-details-mob .btn-1:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  #my-works .content:hover .content-details {
+    display: none;
+  }
+  #my-works .content:hover .content-overlay {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   header .hire-me-btn, #experience .hire-me-btn {
@@ -488,6 +565,13 @@ footer p {
   }
   #banner .hero p {
     font-size: 18px;
+  }
+
+  #contact .socmed-links .soc-logo {
+    height: 28px;
+  }
+  #contact .line-green {
+    padding: 26px;
   }
 }
 @media (max-width: 375px) {
