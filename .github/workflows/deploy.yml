@@ -23,13 +23,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          cache: npm
+      - uses: oven-sh/setup-bun@v2
 
-      - run: npm ci
-      - run: npm run generate
+      - run: bun install --frozen-lockfile
+      - run: bun run generate
 
       - uses: actions/upload-pages-artifact@v3
         with:
